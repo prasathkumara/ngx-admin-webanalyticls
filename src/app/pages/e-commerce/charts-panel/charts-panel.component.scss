@@ -1,0 +1,280 @@
+@import '../../../@theme/styles/themes';
+
+$legend-all-orders-color: #00977e;
+$legend-payment-color: #6935ca;
+$legend-canceled-color: #3f4fda;
+
+@include nb-install-component() {
+
+  nb-tabset {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    ::ng-deep ul {
+      // make same size as card header
+      border-color: transparent;
+      padding-bottom: 1px;
+      .tab-link {
+        padding: 1.25rem 2rem;
+      }
+    }
+  }
+
+  nb-tab {
+    flex: 1;
+    padding: 0 0 1.25rem;
+  }
+
+  .chart-container {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  ngx-profit-chart,
+  ngx-orders-chart {
+    padding: 0 1.25rem;
+  }
+}
+
+// .high-chart{
+//   margin-left: -43rem;
+//   justify-content: center;
+//   width: 170%;
+//   margin-top: 4rem;
+// }
+// .flex-container {
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .screen-data-card {
+//   margin-top: 20px;
+// }
+// .screen-data-container {
+//   display: flex;
+// }
+
+// .screen-data {
+//   padding: 20px;
+// }
+
+// .flex-item {
+//   flex: 1;
+//   margin-right: 20px;
+// }
+
+// .card-container {
+//   max-width: 300px;
+// }
+
+// .screen-card {
+//   border: 1px solid #ccc;
+//   padding: 10px;
+// }
+
+// .chart-container {
+//   width: calc(100% - 300px);
+// }
+
+// .flex-container {
+//   display: flex;
+//   align-items: flex-start; /* Adjust as needed */
+// }
+
+// .user-dropdown {
+//   flex: 1; /* Adjust to control the width of the dropdown */
+//   margin-right: 10px; /* Adjust spacing between dropdown and screen cards */
+// }
+
+// .screen-cards {
+//   .flex-container {
+//   display: flex;
+//   align-items: flex-start; /* Adjust as needed */
+// }
+
+// .user-dropdown {
+//   flex: 1; /* Adjust to control the width of the dropdown */
+//   margin-right: 10px; /* Adjust spacing between dropdown and screen cards */
+// }
+
+// .screen-cards {
+//   flex: 1; /* Adjust to control the width of the screen cards */
+//   display: -webkit-box;
+//   flex-direction: column;
+// }
+
+// flex: 1; /* Adjust to control the width of the screen cards */
+//   display: -webkit-box;
+//   flex-direction: column;
+
+// }
+
+
+// // .screen-data-card-small {
+// //   width: 200px; /* Adjust the width as needed */
+// //   height: 250px; /* Adjust the height as needed */
+// //   margin-left: 24rem;
+// //     margin-top: -2rem;
+// // }
+
+// /* Apply styles when the dropdown is present */
+// nb-select + .screen-data-card-small {
+//   width: 200px; /* Adjust the width as needed */
+//   height: 250px; /* Adjust the height as needed */
+//   margin-left: 24rem;
+//   margin-top: -2rem;
+// }
+
+// /* Media query for smaller screens */
+// @media (max-width: 767px) {
+//   /* Apply styles when the dropdown is present */
+//   nb-select + .screen-data-card-small {
+//     margin-left: 1rem; /* Adjust the left margin for smaller screens */
+//     margin-top: 1rem; /* Adjust the top margin for smaller screens */
+//   }
+// }
+
+
+// .screen-data-card-small {
+//   width: 200px; /* Adjust the width as needed */
+//   height: 250px; /* Adjust the height as needed */
+//   margin-left: 24rem; /* Adjust the left margin as needed */
+//   margin-top: -2rem; /* Adjust the top margin as needed */
+//   margin-right: 20px; /* Adjust the right margin to create a gap */
+// }
+
+// /* Apply styles when the dropdown is present */
+// // nb-select + .screen-data-card-small {
+// //   width: 200px; /* Adjust the width as needed */
+// //   height: 250px; /* Adjust the height as needed */
+// //   margin-left: 24rem; /* Adjust the left margin as needed */
+// //   margin-top: -2rem; /* Adjust the top margin as needed */
+// //   margin-right: 20px; /* Adjust the right margin to create a gap */
+// // }
+
+// // /* Media query for smaller screens */
+// // @media (max-width: 767px) {
+// //   /* Apply styles when the dropdown is present */
+// //   nb-select + .screen-data-card-small {
+// //     margin-left: 1rem; /* Adjust the left margin for smaller screens */
+// //     margin-top: 1rem; /* Adjust the top margin for smaller screens */
+// //     margin-right: 20px; /* Adjust the right margin to create a gap */
+// //   }
+// // }
+
+
+// /* Customizing scrollbar for the .screen-data container */
+// .screen-data::-webkit-scrollbar {
+//   width: 10px; /* Width of the scrollbar */
+// }
+
+// .screen-data::-webkit-scrollbar-thumb {
+//   background: #2C9EC1; /* Color of the thumb */
+//   border-radius: 5px; /* Rounded corners of the thumb */
+// }
+
+// .screen-data::-webkit-scrollbar-track {
+//   background: #283459; /* Color of the track */
+// }
+
+// /* Customizing scrollbar for the .screen-data-card-small container */
+// .screen-data-card-small::-webkit-scrollbar {
+//   width: 10px; /* Width of the scrollbar */
+// }
+
+// .screen-data-card-small::-webkit-scrollbar-thumb {
+//   background: #888; /* Color of the thumb */
+//   border-radius: 5px; /* Rounded corners of the thumb */
+// }
+
+// .screen-data-card-small::-webkit-scrollbar-track {
+//   background: #315FE9; /* Color of the track */
+// }
+
+// .screen-data-card {
+//   margin-top: 20px;
+//   margin-right: 0.5rem; /* Adjust the right margin between the screen cards */
+// }
+
+
+
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  nb-card-body {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      width: 100%;
+    }
+  }
+}
+@include nb-install-component() {
+  .list-card {
+    nb-card-header {
+      border-bottom: none;
+    }
+
+    nb-card-body {
+      padding: 0;
+     
+    }
+    nb-list-item{
+     padding: 12px;
+     
+    }
+    nb-list{
+      //height: 227px;
+      
+    }
+    nb-list::-webkit-scrollbar {
+      width: 8px;
+      height: 4px;
+    }
+    
+    nb-list::-webkit-scrollbar-thumb {
+      background-color: #7fa59f; /* Color of the scrollbar thumb */
+      border-radius: 10px;
+    }
+    
+    nb-list::-webkit-scrollbar-track {
+      background-color: #f1f1f1; /* Color of the scrollbar track */
+      border-radius: 10px;
+    }
+    
+  }
+}
+
+.chart{
+  margin-top: 50px;
+}
+.flex-container {
+  display: flex;
+  //flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+  justify-content: space-between; /* Distribute items evenly */
+  overflow-y: auto; 
+  //max-height: 300px; /* Set a fixed height for the container */
+}
+
+// .list-card {
+//   margin-right: 10px; /* Add margin between cards for better spacing */
+// }
+
+.flex-container::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+.flex-container::-webkit-scrollbar-thumb {
+  background-color: #7fa59f; /* Color of the scrollbar thumb */
+  border-radius: 10px;
+}
+
+.flex-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the scrollbar track */
+  border-radius: 10px;
+}
